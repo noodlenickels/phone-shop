@@ -2,6 +2,7 @@ import logo from './phone.png'
 
 function Card() {
     return (
+      <a href={`/item`}>
       <div className="Card-container">
         <img className="Phone" src={logo} alt="Logo" />
         <div className="Card-flex">
@@ -10,6 +11,7 @@ function Card() {
         </div>
         <div className="Card-button">В корзину</div>
       </div>
+      </a>
     );
   }
   

@@ -1,21 +1,17 @@
-import Card from './Card';
-import user from './profile.png';
-import cart from './basket.png';
+import Card from '../components/Card.jsx';
+import user from '../components/profile.png';
+import cart from '../components/basket.png';
 
 function Main() {
-    function goToCart() {
-
-    }
   return (
     <div className="App">
       <header className="App-header">
-        <div className="header-text">Здесь мог быть ваш логотип</div>
+        <div className="header-text font-bold">Здесь мог быть ваш логотип</div>
         <div className="icons">
           <img src={user} alt="user" />
-          <div>
-          <img onClick={goToCart} src={cart} alt="cart" />
-          <a href={`/contacts/2`}></a>
-          </div>
+          <a href={`/cart`}>
+          <img src={cart} alt="cart" />
+          </a>
         </div>
       </header>
       <div className="flex">

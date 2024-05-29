@@ -4,22 +4,26 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-import "./index.css";
+import "./App.css";
 
 import Root from "./routes/root";
+import Cart from "./routes/cart";
+import Item from "./routes/item";
 
-import Contact from "./routes/contact";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <ErrorPage />,
   },
   {
-    path: "contacts/:contactId",
-    element: <Contact />,
+    path: "/cart",
+    element: <Cart />,
   },
+  {
+    path: "/item",
+    element: <Item />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
